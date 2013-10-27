@@ -1,0 +1,21 @@
+<h1>Listing articles</h1>
+<%= link_to 'New Article', new_article_path %>
+<div class="divTable">
+             <div class="headRow">
+                <div class="divCell" id="id">ID</div>
+                <div class="divCell" id="title">Title</div>
+                <div  class="divCell" id="content">Content</div>
+                <div  class="divCell" id="action_items">Action</div>
+             </div>
+             <% @articles.each do |article| %>
+            <div class="divRow">
+               <div class="divRow">
+                <div class="divCell" id="id"><%= article.id%></div>
+                <div class="divCell" id="title"><%= truncate(article.title, :omission => "... (continued)", :length => 50) %></div>
+                <div class="divCell"  id="content"><%= truncate(article.content, :omission => "... (continued)", :length => 200) %></div>
+                <div class="divCell"  id="action_items"><%= link_to 'Show', article %><br/><%= link_to 'Edit', edit_article_path(article) %><br><%= link_to 'Destroy', article, confirm: 'Are you sure?', method: :delete %></div>
+            </div>
+            </div>
+            <% end %>
+            <%= will_paginate @articles %>
+      </div>

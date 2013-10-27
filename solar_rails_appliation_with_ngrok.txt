@@ -1,0 +1,10 @@
+Download the ngrok.zip from the https://ngrok.com/
+Folow the steps as shown in the url https://ngrok.com/download
+open a terminal first with the directory path as the ./path/'path to the ngrok folder'/
+run the command ngrok 3000 in that above path
+open a terminal first with the directory path as the ./path/'path to the rails application folder'/
+run the command rails s 
+now 2 terminal are avaliable with one ins the local port and the production port avaliable across all system with thge url mentioned the the ngrok tremila 
+eg:- http://xxxxxxxxx.ngrok.com 
+place the url in the browser to access across around http://xxxxxxxxx.ngrok.com.
+
