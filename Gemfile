@@ -4,7 +4,7 @@ gem 'rails', '3.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-#gem 'pg'
+gem 'pg'
 gem 'sqlite3','1.3.6'
 
 gem 'json','1.7.0'
@@ -49,7 +49,7 @@ gem "rmagick", "~> 2.13.1"
 #  gem 'ruby-debug-base19', '0.11.26', :path => "~/.rvm/gems/ruby-1.9.3-p0/gems/ruby-debug-base19-0.11.26/"
 #  gem 'ruby-debug19', :require => 'ruby-debug'
 #gem 'ruby-debug19', :require => 'ruby-debug'
-gem 'debugger'
+#gem 'debugger'
  gem 'prawn'
  gem "prawnto_2", :require => "prawnto"
  gem 'sitemap_generator'
