@@ -2,8 +2,13 @@ SolarSearch::Application.routes.draw do
   resources :authors
 
   resources :articles 
+
    
   match 'search' => 'articles#search', :as => :search
+  match "sitemap.xml", :to => "sitemaps#index", :defaults => {:format => :xml}
+  match "article_sitemap.xml", :to => "sitemaps#article_sitemap", :defaults => {:format => :xml}
+  match "sitemaps/sitemap.xml", :to => "sitemaps#index", :defaults => {:format => :xml}
+  root :to => 'articles#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

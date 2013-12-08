@@ -52,4 +52,7 @@ gem "rmagick", "~> 2.13.1"
 gem 'debugger'
  gem 'prawn'
  gem "prawnto_2", :require => "prawnto"
-gem "localtunnel"
+ gem 'sitemap_generator'
+gem 'cannikin-gattica'
+gem "gattica", "0.6.2", :git => "https://github.com/chrisle/gattica.git"
+
