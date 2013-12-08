@@ -4,7 +4,7 @@ xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
 
  for post in @posts
    xml.url do
-     xml.loc "http://6a060dbc.ngrok.com/articles/#{post.id}"
+     xml.loc "http://mighty-ridge-4008.herokuapp.com/articles/#{post.id}"
      xml.priority('1.0')
      xml.changefreq('never')
    end
