@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: solar_deploy_test
   pool: 5
-  username: postgres
+  username: gurudath
   password: gurudath
 
 test:
@@ -11,5 +11,12 @@ test:
   encoding: unicode
   database: solar_deploy_test
   pool: 5
-  username: postgres
+  username: gurudath
+  password: gurudath
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: solar_deploy_test
+  pool: 5
+  username: gurudath
   password: gurudath
