@@ -3,13 +3,6 @@ has_many :article_authors
 has_many :authors , :through=>:article_authors
 
 
-searchable do
-  integer :id
-  text :title, :stored => true
-  text :content, :stored => true
-  text :description
-  integer :author_ids, :multiple => true
-end
 
 
 def article_id
@@ -32,14 +25,6 @@ end
   end 
   return @results
  end
-
-after_create do |article|
-  article.index!
-end
-
-after_update do |article|
-  article.index!
-end
 
 
 end
