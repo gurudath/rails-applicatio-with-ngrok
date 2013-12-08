@@ -20,8 +20,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 gem 'progress_bar'
-gem 'sunspot_rails'
-gem 'sunspot_solr'
 gem 'jquery-rails','2.0.2'
 gem 'execjs','1.3.1'
 gem 'mysql','2.8.1'

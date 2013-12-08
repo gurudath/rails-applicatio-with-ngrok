@@ -19,11 +19,11 @@
 <body>
 
 <div id='search'>
- <%=form_tag({:action=>"search"},{ :method => :get}) do %>
- <%=hidden_field_tag :per_page,30%>
- <%=text_field_tag :search,params[:search]%>
- <%=submit_tag("search")%> 
- <%end%>
+ <%#=form_tag({:action=>"search"},{ :method => :get}) do %>
+ <%#=hidden_field_tag :per_page,30%>
+ <%#=text_field_tag :search,params[:search]%>
+ <%#=submit_tag("search")%> 
+ <%#end%>
 </div>
 <%= yield %>
 
