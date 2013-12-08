@@ -53,6 +53,6 @@ gem 'debugger'
  gem 'prawn'
  gem "prawnto_2", :require => "prawnto"
  gem 'sitemap_generator'
-gem 'cannikin-gattica'
+#gem 'cannikin-gattica'
 gem "gattica", "0.6.2", :git => "https://github.com/chrisle/gattica.git"
 
