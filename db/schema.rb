@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131020111240) do
+ActiveRecord::Schema.define(:version => 20131221072048) do
 
   create_table "article_authors", :force => true do |t|
     t.integer  "article_id"
@@ -43,6 +43,18 @@ ActiveRecord::Schema.define(:version => 20131020111240) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "maps", :force => true do |t|
+    t.string   "name"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "address3"
+    t.string   "postalcode"
+    t.string   "latitude"
+    t.string   "longitude"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

@@ -46,9 +46,11 @@ gem "rmagick", "~> 2.13.1"
 #  gem 'ruby-debug-base19', '0.11.26', :path => "~/.rvm/gems/ruby-1.9.3-p0/gems/ruby-debug-base19-0.11.26/"
 #  gem 'ruby-debug19', :require => 'ruby-debug'
 #gem 'ruby-debug19', :require => 'ruby-debug'
-#gem 'debugger'
+gem 'debugger'
  gem 'prawn'
  gem "prawnto_2", :require => "prawnto"
  gem 'sitemap_generator'
 gem "gattica", "0.6.2", :git => "https://github.com/chrisle/gattica.git"
-
+gem "geocoder"
+gem 'static_map'
+gem 'gmaps4rails'

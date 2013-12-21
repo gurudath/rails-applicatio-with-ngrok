@@ -1,4 +1,6 @@
 SolarSearch::Application.routes.draw do
+  resources :maps
+
   resources :authors
 
   resources :articles 
